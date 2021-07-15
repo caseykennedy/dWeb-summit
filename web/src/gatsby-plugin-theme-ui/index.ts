@@ -99,13 +99,13 @@ const theme: ThemeShape = {
   // ___________________________________________________________________
 
   colors: {
-    text: '#212121',
+    text: '#000000',
     background: '#ffffff',
 
-    primary: '#0080FF',
-    secondary: '#78FFF2',
-    tertiary: '#E0F8FF',
-    accent: '#b5a0ff',
+    primary: '#00FF00',
+    secondary: '#00C178',
+    tertiary: '#34FFDD',
+    accent: '#70D4FF',
     highlight: '#fdffd4',
     muted: '#DBDBDB',
 
@@ -139,7 +139,7 @@ const theme: ThemeShape = {
     mobile: 4,
     tablet: 5,
     desktop: 5,
-    vertical: [6],
+    vertical: [5],
     axis: [5],
   },
 
@@ -147,10 +147,10 @@ const theme: ThemeShape = {
   // ___________________________________________________________________
 
   fonts: {
-    body: `"Karla", Arial, Liberation Mono, Menlo, Courier, monospace`,
-    heading: `"Karla", Arial, Liberation Mono, Menlo, Courier, monospace`,
-    sans: `"Karla", Arial, Liberation Mono, Menlo, Courier, monospace`,
-    display: `"Saygon", Arial, Liberation Mono, Menlo, Courier, monospace`,
+    body: `"Stolzl", Arial, Liberation Mono, Menlo, Courier, monospace`,
+    heading: `"Stolzl", Arial, Liberation Mono, Menlo, Courier, monospace`,
+    sans: `"Stolzl", Arial, Liberation Mono, Menlo, Courier, monospace`,
+    display: `"Stolzl", Arial, Liberation Mono, Menlo, Courier, monospace`,
     mono: `"DMMono", Consolas, Liberation Mono, Menlo, Courier, monospace`,
   },
 
@@ -168,9 +168,9 @@ const theme: ThemeShape = {
   fontWeights: {
     light: 300,
     regular: 400,
-    medium: 500,
-    bold: 600,
-    black: 700,
+    book: 500,
+    medium: 600,
+    bold: 700,
   },
 
   strokeWidth: '2px',
@@ -181,7 +181,7 @@ const theme: ThemeShape = {
   buttons: {
     primary: {
       bg: 'primary',
-      color: 'white',
+      color: 'black',
       borderRadius: 0,
       cursor: 'pointer',
       fontSize: 3,

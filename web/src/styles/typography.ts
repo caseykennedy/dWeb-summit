@@ -5,27 +5,29 @@
 import { css } from 'styled-components'
 import theme from '../gatsby-plugin-theme-ui'
 
-// Karla Regular
-import KarlaRegularEot from './fonts/Karla-Regular.eot'
-import KarlaRegularOtf from './fonts/Karla-Regular.otf'
-import KarlaRegularWoff from './fonts/Karla-Regular.woff'
+// Stolzl Regular
+import StolzlRegularEot from './fonts/Stolzl-Regular.eot'
+import StolzlRegularOtf from './fonts/Stolzl-Regular.otf'
+import StolzlRegularWoff from './fonts/Stolzl-Regular.woff'
+import StolzlRegularWoff2 from './fonts/Stolzl-Regular.woff2'
 
-// Karla Italic
-import KarlaItalicEot from './fonts/Karla-Italic.eot'
-import KarlaItalicOtf from './fonts/Karla-Italic.otf'
-import KarlaItalicWoff from './fonts/Karla-Italic.woff'
-import KarlaItalicWoff2 from './fonts/Karla-Italic.woff2'
+// Stolzl Book
+import StolzlBookEot from './fonts/Stolzl-Book.eot'
+import StolzlBookOtf from './fonts/Stolzl-Book.otf'
+import StolzlBookWoff from './fonts/Stolzl-Book.woff'
+import StolzlBookWoff2 from './fonts/Stolzl-Book.woff2'
 
-// Karla Bold
-import KarlaBoldEot from './fonts/Karla-Bold.eot'
-import KarlaBoldOtf from './fonts/Karla-Bold.otf'
-import KarlaBoldWoff from './fonts/Karla-Bold.woff'
-import KarlaBoldWoff2 from './fonts/Karla-Bold.woff2'
+// Stolzl Medium
+import StolzlMediumEot from './fonts/Stolzl-Medium.eot'
+import StolzlMediumOtf from './fonts/Stolzl-Medium.otf'
+import StolzlMediumWoff from './fonts/Stolzl-Medium.woff'
+import StolzlMediumWoff2 from './fonts/Stolzl-Medium.woff2'
 
-// CA Saygon Regular
-import SaygonRegularEot from './fonts/CA-Saygon-Regular.eot'
-import SaygonRegularOtf from './fonts/CA-Saygon-Regular.otf'
-import SaygonRegularWoff from './fonts/CA-Saygon-Regular.woff'
+// Stolzl Bold
+import StolzlBoldEot from './fonts/Stolzl-Bold.eot'
+import StolzlBoldOtf from './fonts/Stolzl-Bold.otf'
+import StolzlBoldWoff from './fonts/Stolzl-Bold.woff'
+import StolzlBoldWoff2 from './fonts/Stolzl-Bold.woff2'
 
 // DM Mono Regular
 import DMMonoRegularEot from './fonts/DMMono-Regular.eot'
@@ -36,53 +38,53 @@ import DMMonoRegularOtf from './fonts/DMMono-Regular.otf'
 // ___________________________________________________________________
 
 const Typography = css`
-
-  /* Karla Regular */
+  /* Stolzl Regular */
   @font-face {
-    font-family: 'Karla';
-    src: url(${KarlaRegularEot});
-    src: url(${KarlaRegularWoff}) format('woff'),
-      url(${KarlaRegularOtf}) format('opentype'),
-      url(${KarlaRegularEot}?#iefix) format('embedded-opentype');
+    font-family: 'Stolzl';
+    src: url(${StolzlRegularEot});
+    src: url(${StolzlRegularWoff}) format('woff'),
+      url(${StolzlRegularOtf}) format('opentype'),
+      url(${StolzlRegularEot}?#iefix) format('embedded-opentype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
 
-  /* Karla Italic */
+  /* Stolzl Book */
   @font-face {
-    font-family: 'Karla';
-    src: url(${KarlaItalicEot});
-    src: url(${KarlaItalicWoff2}) format('woff2'),
-      url(${KarlaItalicWoff}) format('woff'),
-      url(${KarlaItalicOtf}) format('opentype'),
-      url(${KarlaItalicEot}?#iefix) format('embedded-opentype');
-    font-weight: 400;
+    font-family: 'Stolzl';
+    src: url(${StolzlBookEot});
+    src: url(${StolzlBookWoff2}) format('woff2'),
+      url(${StolzlBookWoff}) format('woff'),
+      url(${StolzlBookOtf}) format('opentype'),
+      url(${StolzlBookEot}?#iefix) format('embedded-opentype');
+    font-weight: 500;
     font-style: italic;
     font-display: swap;
   }
 
-  /* Karla Bold */
+  /* Stolzl Medium */
   @font-face {
-    font-family: 'Karla';
-    src: url(${KarlaBoldEot});
-    src: url(${KarlaBoldWoff2}) format('woff2'),
-      url(${KarlaBoldWoff}) format('woff'),
-      url(${KarlaBoldOtf}) format('opentype'),
-      url(${KarlaBoldEot}?#iefix) format('embedded-opentype');
-    font-weight: 700;
+    font-family: 'Stolzl';
+    src: url(${StolzlMediumEot});
+    src: url(${StolzlMediumWoff2}) format('woff'),
+      url(${StolzlMediumWoff}) format('woff'),
+      url(${StolzlMediumOtf}) format('opentype'),
+      url(${StolzlMediumEot}?#iefix) format('embedded-opentype');
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
   }
 
-  /* CA Saygon Regular */
+  /* Stolzl Bold */
   @font-face {
-    font-family: 'Saygon';
-    src: url(${SaygonRegularEot});
-    src: url(${SaygonRegularWoff}) format('woff'),
-      url(${SaygonRegularOtf}) format('opentype'),
-      url(${SaygonRegularEot}?#iefix) format('embedded-opentype');
-    font-weight: 400;
+    font-family: 'Stolzl';
+    src: url(${StolzlBoldEot});
+    src: url(${StolzlBoldWoff2}) format('woff2'),
+      url(${StolzlBoldWoff}) format('woff'),
+      url(${StolzlBoldOtf}) format('opentype'),
+      url(${StolzlBoldEot}?#iefix) format('embedded-opentype');
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
@@ -205,7 +207,11 @@ const Typography = css`
 
   h5,
   .text--sm {
-    font-size: calc(${theme.fontSizes[3]});
+    font-size: calc(${theme.fontSizes[1]});
+
+    @media ${theme.mq.tablet} {
+      font-size: calc(${theme.fontSizes[2]});
+    }
   }
 
   h6,
@@ -246,24 +252,12 @@ const Typography = css`
     font-weight: 800;
   }
 
-  .text--small {
-    font-size: calc(${theme.fontSizes[0]});
-
-    @media ${theme.mq.tablet} {
-      font-size: calc(${theme.fontSizes[1]});
-    }
-  }
-
   .text--mono {
     font-family: ${theme.fonts.mono};
     letter-spacing: -0.75px;
   }
 
-  .t-underline {
-    text-decoration: underline;
-  }
-
-  .t--dual-col {
+  .text--dual-col {
     column-count: 1;
 
     @media ${theme.mq.tablet} {

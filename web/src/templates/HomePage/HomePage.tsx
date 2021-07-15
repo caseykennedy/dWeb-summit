@@ -69,7 +69,49 @@ const HomePage: React.FC = () => {
         </Text>
       </Section>
 
+      <Section bg="primary">
+        <Heading as="h1" mb={2}>
+          The dWeb Summit{' '}
+          <Text as="span" sx={{ fontFamily: `display` }}>
+            2021
+          </Text>
+        </Heading>
+        <Text as="p" mb={6}>
+          Golem generated the quick testnet for lots of circulating supply! When
+          Nexo thinking many constant private key, Dash based on a genesis
+          block! Maker left few confirmation at a IPO.
+        </Text>
+      </Section>
+
       <Section bg="secondary">
+        <Heading as="h1" mb={2}>
+          The dWeb Summit{' '}
+          <Text as="span" sx={{ fontFamily: `display` }}>
+            2021
+          </Text>
+        </Heading>
+        <Text as="p" mb={6}>
+          Golem generated the quick testnet for lots of circulating supply! When
+          Nexo thinking many constant private key, Dash based on a genesis
+          block! Maker left few confirmation at a IPO.
+        </Text>
+      </Section>
+
+      <Section bg="tertiary">
+        <Heading as="h1" mb={2}>
+          The dWeb Summit{' '}
+          <Text as="span" sx={{ fontFamily: `display` }}>
+            2021
+          </Text>
+        </Heading>
+        <Text as="p" mb={6}>
+          Golem generated the quick testnet for lots of circulating supply! When
+          Nexo thinking many constant private key, Dash based on a genesis
+          block! Maker left few confirmation at a IPO.
+        </Text>
+      </Section>
+
+      <Section bg="accent">
         <Heading as="h1" mb={2}>
           The dWeb Summit{' '}
           <Text as="span" sx={{ fontFamily: `display` }}>
