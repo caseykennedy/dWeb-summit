@@ -49,7 +49,7 @@ const HomePage: React.FC = () => {
         <Heading as="h4" mb={2}>
           Bitcoin Cash identified lots of mainnet.
         </Heading>
-        <Heading as="h5" mb={2}>
+        <Heading as="h5" mb={3}>
           Bitcoin Cash identified lots of mainnet.
         </Heading>
         <Heading as="h6">Bitcoin Cash identified lots of mainnet.</Heading>

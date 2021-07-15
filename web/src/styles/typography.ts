@@ -216,7 +216,8 @@ const Typography = css`
 
   h6,
   .text--xs {
-    font-size: ${theme.fontSizes[2]};
+    font-size: ${theme.fontSizes[1]};
+    text-transform: uppercase;
   }
 
   p,
