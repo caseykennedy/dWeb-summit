@@ -150,7 +150,7 @@ const Typography = css`
   h5,
   h6 {
     font-family: ${theme.fonts.heading};
-    font-weight: ${theme.fontWeights.regular};
+    font-weight: ${theme.fontWeights.bold};
     line-height: ${theme.root.font.headingLineHeight};
     letter-spacing: ${theme.root.font.headingLetterSpacing};
     transition: ${theme.transition.all};
@@ -207,17 +207,19 @@ const Typography = css`
 
   h5,
   .text--sm {
-    font-size: calc(${theme.fontSizes[1]});
-
-    @media ${theme.mq.tablet} {
-      font-size: calc(${theme.fontSizes[2]});
-    }
+    font-size: calc(${theme.fontSizes[2]});
   }
 
   h6,
   .text--xs {
-    font-size: ${theme.fontSizes[1]};
+    font-size: calc(${theme.fontSizes[1]} * 1.15);
+    font-weight: 600;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
+
+    @media ${theme.mq.tablet} {
+      font-size: ${theme.fontSizes[1]};
+    }
   }
 
   p,

@@ -19,10 +19,8 @@ const HomePage: React.FC = () => {
     <S.HomePage>
       <Section>
         <Heading as="h1" mb={2}>
-          The dWeb Summit{' '}
-          <Text as="span" sx={{ fontFamily: `display` }}>
-            2021
-          </Text>
+          dWeb Summit{' '}
+          <Text as="span" sx={{fontWeight: 300}}>2021</Text>
         </Heading>
         <Text as="p" mb={6}>
           Golem generated the quick testnet for lots of circulating supply! When
@@ -30,11 +28,14 @@ const HomePage: React.FC = () => {
           block! Maker left few confirmation at a IPO.
         </Text>
 
-        <Flex mb={6}>
-          <Button mr={2} variant="primary">
+        <Flex mb={6} sx={{ flexDirection: ['column', 'row'] }}>
+          <Button mr={[0, 2]} mb={[2, 0]} variant="primary">
             Buy Tickets
           </Button>
-          <Button mr={2} bg="secondary" color="black" variant="primary">
+          <Button mr={[0, 2]} mb={[2, 0]} bg="tertiary" variant="primary">
+            Buy Tickets
+          </Button>
+          <Button mr={[0, 2]} mb={[2, 0]} bg="muted" variant="primary">
             Buy Tickets
           </Button>
           <Button variant="secondary">Buy Tickets</Button>
@@ -56,11 +57,9 @@ const HomePage: React.FC = () => {
       </Section>
 
       <Section bg="text" color="gray">
-        <Heading as="h1" mb={2}>
+        <Heading as="h2" mb={1}>
           The dWeb Summit{' '}
-          <Text as="span" sx={{ fontFamily: `display` }}>
-            2021
-          </Text>
+          2021
         </Heading>
         <Text as="p" mb={6}>
           Golem generated the quick testnet for lots of circulating supply! When
@@ -70,11 +69,9 @@ const HomePage: React.FC = () => {
       </Section>
 
       <Section bg="primary">
-        <Heading as="h1" mb={2}>
+        <Heading as="h3" mb={1}>
           The dWeb Summit{' '}
-          <Text as="span" sx={{ fontFamily: `display` }}>
-            2021
-          </Text>
+          2021
         </Heading>
         <Text as="p" mb={6}>
           Golem generated the quick testnet for lots of circulating supply! When
@@ -84,11 +81,9 @@ const HomePage: React.FC = () => {
       </Section>
 
       <Section bg="secondary">
-        <Heading as="h1" mb={2}>
+        <Heading as="h4" mb={1}>
           The dWeb Summit{' '}
-          <Text as="span" sx={{ fontFamily: `display` }}>
-            2021
-          </Text>
+          2021
         </Heading>
         <Text as="p" mb={6}>
           Golem generated the quick testnet for lots of circulating supply! When
@@ -98,11 +93,9 @@ const HomePage: React.FC = () => {
       </Section>
 
       <Section bg="tertiary">
-        <Heading as="h1" mb={2}>
+        <Heading as="h5" mb={2}>
           The dWeb Summit{' '}
-          <Text as="span" sx={{ fontFamily: `display` }}>
-            2021
-          </Text>
+          2021
         </Heading>
         <Text as="p" mb={6}>
           Golem generated the quick testnet for lots of circulating supply! When
@@ -112,11 +105,9 @@ const HomePage: React.FC = () => {
       </Section>
 
       <Section bg="accent">
-        <Heading as="h1" mb={2}>
+        <Heading as="h6" mb={2}>
           The dWeb Summit{' '}
-          <Text as="span" sx={{ fontFamily: `display` }}>
-            2021
-          </Text>
+          2021
         </Heading>
         <Text as="p" mb={6}>
           Golem generated the quick testnet for lots of circulating supply! When
