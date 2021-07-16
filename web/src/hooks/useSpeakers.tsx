@@ -1,4 +1,4 @@
-// usePerson hook
+// useSpeakers hook
 // Hook for querying foundation people
 
 // ___________________________________________________________________
@@ -7,42 +7,38 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 // ___________________________________________________________________
 
-const usePerson = () => {
-  const data = useStaticQuery<PersonShape>(graphql`
-    query PersonQuery {
-      people: allSanityPerson(
-        sort: { order: ASC, fields: _createdAt }
-        filter: { role: { eq: "admin" } }
-      ) {
+const useSpeakers = () => {
+  const data = useStaticQuery<SpeakerShape>(graphql`
+    query SpeakerQuery {
+      speakers: allSanitySpeaker(sort: { order: ASC, fields: _createdAt }) {
         edges {
           node {
             _createdAt
             _id
             _rawBio
-            avatar {
+            figure {
               asset {
                 gatsbyImageData(
                   fit: FILLMAX
                   layout: FULL_WIDTH
                   placeholder: BLURRED
                   formats: [AUTO, AVIF, WEBP]
-                  aspectRatio: 1
                 )
                 url
               }
             }
             name
-            role
             slug {
               current
             }
+            twitter
           }
         }
       }
     }
   `)
 
-  return data.people.edges
+  return data.speakers.edges
 }
 
-export default usePerson
+export default useSpeakers

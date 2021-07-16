@@ -94,32 +94,32 @@ type PostContextShape = {
   }
 }
 
-// Person shape
+// Speaker shape
 // ___________________________________________________________________
 
-type PersonShape = {
-  people: {
-    edges: PersonEdges[]
+type SpeakerShape = {
+  speakers: {
+    edges: SpeakerEdges[]
   }
 }
 
-type PersonEdges = {
-  node: PersonQuery
+type SpeakerEdges = {
+  node: SpeakerQuery
 }
 
-type PersonQuery = {
+type SpeakerQuery = {
   _createdAt: string
   _id: string
   _rawBio: string
-  avatar: {
+  figure: {
     asset: {
       gatsbyImageData: IGatsbyImageData
       url: string
     }
   }
   name: string
-  role: string
   slug: {
     current: string
   }
+  twitter: string
 }

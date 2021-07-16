@@ -3,6 +3,7 @@
 // ___________________________________________________________________
 
 import React from 'react'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import Marquee from 'react-fast-marquee'
 
 // Theme + ui
@@ -13,11 +14,39 @@ import { Box, Button, Flex, Heading, Text, Grid } from 'theme-ui'
 // Components
 import Section from '../../components/Section'
 
+// Data
+import useSpeakers from '../../hooks/useSpeakers'
+
 // ___________________________________________________________________
 
 const MarqueeProps = {
   gradient: false,
-  speed: 100,
+  speed: 75,
+}
+
+const Speakers: React.FC = () => {
+  const speakers = useSpeakers()
+  return (
+    <S.Speakers>
+      <Grid columns={[2, 2, 3]} gap={theme.gutter.axis}>
+      {speakers.map(({ node: speaker }, key) => (
+        <Box key={key}>
+          <Box className="figure">
+            <GatsbyImage
+              image={speaker.figure.asset.gatsbyImageData}
+              objectFit="cover"
+              objectPosition="50% 50%"
+              alt={speaker.name}
+            />
+          </Box>
+          <Heading as="h3" mb={4}>
+            {speaker.name}
+          </Heading>
+        </Box>
+      ))}
+    </Grid>
+    </S.Speakers>
+  )
 }
 
 const Hero: React.FC = () => {
@@ -32,7 +61,7 @@ const Hero: React.FC = () => {
           </Marquee>
         </Box>
         <Box mb={7}>
-          <Marquee {...MarqueeProps} direction="right" speed={250}>
+          <Marquee {...MarqueeProps} direction="right">
             <Heading as="h1" mr={1}>
               October 14th, 2021 —
             </Heading>
@@ -57,7 +86,7 @@ const HomePage: React.FC = () => {
 
       <Section border={true} pt={9}>
         <Flex sx={{ justifyContent: 'center' }}>
-          <Box sx={{ flex: 0.75 }}>
+          <Box sx={{ flex: [1, 0.75] }}>
             <Heading as="h3" sx={{ textAlign: 'center' }}>
               Just a lil something for the crypto cats out there in the
               interwebs.
@@ -72,16 +101,7 @@ const HomePage: React.FC = () => {
         </Heading>
 
         <Box>
-          <Grid columns={[2, 3, 4]} gap={theme.gutter.axis}>
-            {speakers.map((speaker, key) => (
-              <Box key={key}>
-                <Box sx={{ bg: 'black', height: '550px', width: '100%' }} />
-                <Heading as="h3" mb={4}>
-                  {speaker.name}
-                </Heading>
-              </Box>
-            ))}
-          </Grid>
+          <Speakers />
         </Box>
 
         <Flex sx={{ justifyContent: 'center', width: '100%' }}>
@@ -106,32 +126,16 @@ const HomePage: React.FC = () => {
           </Box>
         </Flex>
       </Section>
+
+      <Section bg="accent" border={true} pt={9}>
+        <Flex sx={{ justifyContent: 'center' }}>
+          <Box sx={{ flex: 0.75, textAlign: 'center' }}>
+            <Heading as="h3">Follow us on Twitter</Heading>
+          </Box>
+        </Flex>
+      </Section>
     </S.HomePage>
   )
 }
 
 export default HomePage
-
-const speakers = [
-  {
-    name: 'Zach Vorhies',
-  },
-  {
-    name: 'Mathew Zipkin',
-  },
-  {
-    name: 'Eric Meltzer',
-  },
-  {
-    name: 'Ari Paul',
-  },
-  {
-    name: 'Chjango',
-  },
-  {
-    name: 'Eva Beylin',
-  },
-  {
-    name: 'Balaji Srinivasan',
-  },
-]

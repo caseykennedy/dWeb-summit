@@ -24,3 +24,12 @@ export const Hero = styled(Flex)`
     width: 100%;
   }
 `
+
+export const Speakers = styled(Box)`
+  .figure {
+    background: ${theme.colors.black};
+    img {
+      mix-blend-mode: luminosity;
+    }
+  }
+`

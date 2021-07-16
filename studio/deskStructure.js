@@ -22,9 +22,9 @@ export default () =>
       // _________________________________________________________________
 
       S.listItem()
-        .title('People')
-        .schemaType('person')
-        .child(S.documentTypeList('person').title('People')),
+        .title('Speakers')
+        .schemaType('speaker')
+        .child(S.documentTypeList('speaker').title('Speakers')),
 
       // Post Category
       // _________________________________________________________________
