@@ -72,10 +72,10 @@ const HomePage: React.FC = () => {
         </Heading>
 
         <Box>
-          <Grid columns={[2, 3]} gap={theme.gutter.axis}>
+          <Grid columns={[2, 3, 4]} gap={theme.gutter.axis}>
             {speakers.map((speaker, key) => (
               <Box key={key}>
-                <Box sx={{ bg: 'black', height: '555px', width: '100%' }} />
+                <Box sx={{ bg: 'black', height: '550px', width: '100%' }} />
                 <Heading as="h3" mb={4}>
                   {speaker.name}
                 </Heading>
@@ -86,6 +86,24 @@ const HomePage: React.FC = () => {
 
         <Flex sx={{ justifyContent: 'center', width: '100%' }}>
           <Heading className="text--xxl">+ more TBA</Heading>
+        </Flex>
+      </Section>
+
+      <Section bg="muted" border={true} pt={9}>
+        <Flex sx={{ justifyContent: 'center' }}>
+          <Box sx={{ flex: 0.75, textAlign: 'center' }}>
+            <Heading as="h3">Features / Events / Entertainment</Heading>
+            <Text as="p">More info is on the way.</Text>
+          </Box>
+        </Flex>
+      </Section>
+
+      <Section bg="black" color="white" border={true} pt={9}>
+        <Flex sx={{ justifyContent: 'center' }}>
+          <Box sx={{ flex: 0.75, textAlign: 'center' }}>
+            <Heading as="h3">Subscribe / RSVP</Heading>
+            <Text as="p">More info is on the way.</Text>
+          </Box>
         </Flex>
       </Section>
     </S.HomePage>
