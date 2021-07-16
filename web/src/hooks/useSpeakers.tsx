@@ -10,26 +10,30 @@ import { graphql, useStaticQuery } from 'gatsby'
 const useSpeakers = () => {
   const data = useStaticQuery<SpeakerShape>(graphql`
     query SpeakerQuery {
-      speakers: allSanitySpeaker(sort: { order: ASC, fields: _createdAt }) {
+      speakers: allSanitySpeaker(sort: { order: DESC, fields: name }) {
         edges {
           node {
             _createdAt
             _id
             _rawBio
+            company
             figure {
               asset {
                 gatsbyImageData(
-                  width: 600
+                  width: 200
                   placeholder: BLURRED
                   formats: [AUTO, AVIF, WEBP]
                 )
                 url
               }
             }
+            isKeynote
             name
+            position
             slug {
               current
             }
+            topic
             twitter
           }
         }

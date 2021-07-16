@@ -13,8 +13,28 @@ export default {
       type: 'string'
     },
     {
+      name: 'isKeynote',
+      title: 'Keynote Speaker?',
+      type: 'boolean'
+    },
+    {
       name: 'twitter',
       title: 'Twitter',
+      type: 'string'
+    },
+    {
+      name: 'topic',
+      title: 'Topic',
+      type: 'string'
+    },
+    {
+      name: 'company',
+      title: 'Company',
+      type: 'string'
+    },
+    {
+      name: 'position',
+      title: 'Position',
       type: 'string'
     },
     {

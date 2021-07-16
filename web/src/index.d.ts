@@ -111,15 +111,19 @@ type SpeakerQuery = {
   _createdAt: string
   _id: string
   _rawBio: string
+  company: string
   figure: {
     asset: {
       gatsbyImageData: IGatsbyImageData
       url: string
     }
   }
+  isKeynote: boolean
   name: string
+  position: string
   slug: {
     current: string
   }
+  topic: string
   twitter: string
 }

@@ -170,7 +170,7 @@ const Typography = css`
   h5,
   h6 {
     font-family: ${theme.fonts.heading};
-    font-weight: ${theme.fontWeights.regular};
+    font-weight: ${theme.fontWeights.bold};
     line-height: ${theme.root.font.headingLineHeight};
     letter-spacing: ${theme.root.font.headingLetterSpacing};
     transition: ${theme.transition.all};

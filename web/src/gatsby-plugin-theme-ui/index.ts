@@ -241,7 +241,7 @@ const theme: ThemeShape = {
     },
   },
 
-  border: '2px solid #000000',
+  border: '4px solid #000000',
   borderRadius: '4px',
   shadow: '2rem 1.5rem 1rem #9D9FA2',
 

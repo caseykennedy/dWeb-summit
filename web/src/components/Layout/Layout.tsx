@@ -34,7 +34,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <S.Wrapper>
       <Header />
       <S.Main ref={mainRef}>{children}</S.Main>
-      <Footer />
+      {/* <Footer /> */}
     </S.Wrapper>
   )
 }
