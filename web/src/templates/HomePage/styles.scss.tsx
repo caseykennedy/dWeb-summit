@@ -27,9 +27,6 @@ export const Hero = styled(Flex)`
 
 export const Speakers = styled(Box)`
   .figure {
-    background: ${theme.colors.black};
-    img {
-      mix-blend-mode: luminosity;
-    }
+    filter: grayscale(100);
   }
 `

@@ -19,8 +19,7 @@ const useSpeakers = () => {
             figure {
               asset {
                 gatsbyImageData(
-                  fit: FILLMAX
-                  layout: FULL_WIDTH
+                  width: 600
                   placeholder: BLURRED
                   formats: [AUTO, AVIF, WEBP]
                 )
