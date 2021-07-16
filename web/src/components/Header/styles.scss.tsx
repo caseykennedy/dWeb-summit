@@ -45,10 +45,4 @@ export const Menu = styled(Flex)`
 export const Logo = styled(Flex)`
   display: flex;
   flex-direction: column;
-
-  .wordmark {
-    font-family: ${theme.fonts.display};
-    font-size: ${theme.fontSizes[3]};
-    text-decoration: none;
-  }
 `

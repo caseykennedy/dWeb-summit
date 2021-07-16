@@ -32,10 +32,7 @@ const Header = () => {
           <Link to="/" className="logo" aria-label="dotNFT, back to home">
             <S.Logo onClick={() => setNavOpen(false)}>
               <Text className="wordmark" aria-label="dotNFT">
-                dWeb{' '}
-                <Text as="span" color="primary">
-                  Summit
-                </Text>
+                dWeb Summit
               </Text>
             </S.Logo>
           </Link>

@@ -33,19 +33,7 @@ export default Navigation
 
 const data = [
   {
-    name: 'Intro',
+    name: 'More info TBA',
     link: '/intro'
-  },
-  {
-    name: 'Speakers',
-    link: '/speakers'
-  },
-  {
-    name: 'Features',
-    link: '/features'
-  },
-  {
-    name: 'RSVP',
-    link: '/rsvp'
   },
 ]

@@ -5,6 +5,12 @@
 import { css } from 'styled-components'
 import theme from '../gatsby-plugin-theme-ui'
 
+// Stolzl Light
+import StolzlLightEot from './fonts/Stolzl-Light.eot'
+import StolzlLightOtf from './fonts/Stolzl-Light.otf'
+import StolzlLightWoff from './fonts/Stolzl-Light.woff'
+import StolzlLightWoff2 from './fonts/Stolzl-Light.woff2'
+
 // Stolzl Regular
 import StolzlRegularEot from './fonts/Stolzl-Regular.eot'
 import StolzlRegularOtf from './fonts/Stolzl-Regular.otf'
@@ -38,11 +44,25 @@ import DMMonoRegularOtf from './fonts/DMMono-Regular.otf'
 // ___________________________________________________________________
 
 const Typography = css`
+  /* Stolzl Light */
+  @font-face {
+    font-family: 'Stolzl';
+    src: url(${StolzlLightEot});
+    src: url(${StolzlLightWoff2}) format('woff2'),
+      url(${StolzlLightWoff}) format('woff'),
+      url(${StolzlLightOtf}) format('opentype'),
+      url(${StolzlLightEot}?#iefix) format('embedded-opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
   /* Stolzl Regular */
   @font-face {
     font-family: 'Stolzl';
     src: url(${StolzlRegularEot});
-    src: url(${StolzlRegularWoff}) format('woff'),
+    src: url(${StolzlRegularWoff2}) format('woff2'),
+      url(${StolzlRegularWoff}) format('woff'),
       url(${StolzlRegularOtf}) format('opentype'),
       url(${StolzlRegularEot}?#iefix) format('embedded-opentype');
     font-weight: 400;
@@ -150,7 +170,7 @@ const Typography = css`
   h5,
   h6 {
     font-family: ${theme.fonts.heading};
-    font-weight: ${theme.fontWeights.bold};
+    font-weight: ${theme.fontWeights.regular};
     line-height: ${theme.root.font.headingLineHeight};
     letter-spacing: ${theme.root.font.headingLetterSpacing};
     transition: ${theme.transition.all};
