@@ -23,7 +23,12 @@ export const Hero = styled(Flex)`
   .decorator {
     position: absolute;
     inset: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     overflow: hidden;
+    width: 100%;
     z-index: 9999;
 
     &__right {
